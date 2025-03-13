@@ -6,8 +6,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import gymlife from "@/assets/project/gymlife.png";
 import { idType } from "./Home";
+import Image from "next/image";
 
 type projectType = {
   id: string;
@@ -93,7 +93,9 @@ const Project: React.FC<idType> = ({ id }) => {
                 className="w-full h-full rounded-md relative group transition-all duration-300 ease-in overflow-hidden"
                 onClick={() => handleToggleInfo(index)}
               >
-                <img
+                <Image
+                  width={200}
+                  height={200}
                   src={item.img}
                   alt={item.title}
                   className="w-full h-full object-cover object-top rounded-md cursor-pointer transition-all duration-500 ease-in group-hover:object-bottom"
