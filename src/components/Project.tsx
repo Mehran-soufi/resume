@@ -38,14 +38,14 @@ const projectData: projectType[] = [
     title: "کلون X نسخه وب",
     description: "نسخه شبیه سازی شده وب اپلیکیشن X (توئیتر سابق)",
     img: "https://ik.imagekit.io/h9lpdqryj/portfolio/x-clone.webp",
-    link: "https://cafe-relax.vercel.app/",
+    link: "https://x-ui-clone-soufi.vercel.app/",
   },
   {
     id: "4",
     title: "قالب سایت رزرو تور",
     description: "یک قالب سایت مسافری رزرو تور که البته هنوز تکمیل نشده",
     img: "https://ik.imagekit.io/h9lpdqryj/portfolio/restnet.webp",
-    link: "https://movienet-soufi.vercel.app/",
+    link: "https://rest-net-one.vercel.app/",
   },
   {
     id: "5",
