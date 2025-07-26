@@ -67,13 +67,13 @@ const main_skill: main_skill_type[] = [
     id: "1",
     title: "HTML",
     img: "https://raw.githubusercontent.com/tandpfun/skill-icons/65dea6c4eaca7da319e552c09f4cf5a9a8dab2c8/icons/HTML.svg",
-    rating: 97,
+    rating: 95,
   },
   {
     id: "2",
     title: "CSS",
     img: "https://raw.githubusercontent.com/tandpfun/skill-icons/65dea6c4eaca7da319e552c09f4cf5a9a8dab2c8/icons/CSS.svg",
-    rating: 92,
+    rating: 95,
   },
   {
     id: "3",
@@ -85,7 +85,7 @@ const main_skill: main_skill_type[] = [
     id: "4",
     title: "Type Script",
     img: "https://raw.githubusercontent.com/tandpfun/skill-icons/65dea6c4eaca7da319e552c09f4cf5a9a8dab2c8/icons/TypeScript.svg",
-    rating: 70,
+    rating: 80,
   },
   {
     id: "5",
@@ -113,7 +113,7 @@ const main_skill: main_skill_type[] = [
   },
 ];
 
-const Skill: React.FC<idType> =({id})=> {
+const Skill: React.FC<idType> = ({ id }) => {
   return (
     <div className="w-full lg:py-8 py-4" id={id}>
       <Title
@@ -141,15 +141,25 @@ const Skill: React.FC<idType> =({id})=> {
           <div className="w-full h-full absolute top-0 left-0">
             <div className="w-11/12 mx-auto h-full flex justify-center items-center ">
               <div className="w-full h-full select-none flex justify-center items-center">
-                <p className="text-slate-300">
-                  از دیگر مهارت های من میتوان به
-                  {sub_skill.map((item) => (
-                    <span className="px-1 text-white text-lg" key={item.id}>
-                      {item.title} -{" "}
-                    </span>
-                  ))}
-                  اشاره کرد.
-                </p>
+                <div className=" w-full flex flex-col">
+                  <p className="text-slate-300">
+                    از دیگر مهارت های من میتوان به :
+                  </p>
+                  <div className="w-full flex items-center flex-wrap justify-end gap-1">
+                    {sub_skill.map((item, index) => (
+                      <span
+                        className="text-white text-lg flex items-center gap-[2px]"
+                        key={item.id}
+                      >
+                        {index > 0 && index < sub_skill.length && (
+                          <span>-</span>
+                        )}
+                        {item.title}
+                      </span>
+                    ))}
+                  </div>
+                  <p>اشاره کرد.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -217,6 +227,6 @@ const Skill: React.FC<idType> =({id})=> {
       </div>
     </div>
   );
-}
+};
 
 export default Skill;
