@@ -22,7 +22,7 @@ const projectData: projectType[] = [
     title: "سایت خبری veritonews",
     description:
       "یک وب سایت خبری از منابع مختلف و دارای بخش هواشناسی و قیمت های مختلف",
-    img: "https://uploadkon.ir/uploads/69a413_2520250313-140841-1058151515.jpg",
+    img: "https://ik.imagekit.io/h9lpdqryj/portfolio/veritonews.webp",
     link: "https://veritonews.vercel.app/",
   },
   {
