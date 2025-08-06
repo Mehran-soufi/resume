@@ -65,7 +65,7 @@ const HeroSection: React.FC = () => {
             <div className="w-full flex items-center justify-center">
               <Link
                 href={
-                  "https://drive.google.com/file/d/1SkAR8Kz1lqqQ4f2PgAjxY9lEKm6TZKKx/view"
+                  "https://drive.google.com/file/d/1jF61-tEYp8BiZ3J0iTeGOdTmqkUA4ILJ/view?usp=sharing"
                 }
                 target="_blank"
                 className="lg:px-8 md-px-6 px-4 py-2 rounded-md bg-gradient-to-l from-emerald-600 via-emerald-800 to-emerald-950 hover:bg-gradient-to-r"
